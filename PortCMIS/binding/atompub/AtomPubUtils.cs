@@ -1010,7 +1010,7 @@ namespace PortCMIS.Binding.AtomPub
         {
             if (KnownLinks.Contains(rel))
             {
-                typeLinkCache.Put(new string[] { link, repositoryId, id, rel }, type);
+                typeLinkCache.Put(new string[] { repositoryId, id, rel, type }, link);
             }
         }
 
